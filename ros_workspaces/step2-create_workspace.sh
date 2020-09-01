@@ -21,9 +21,3 @@ rosdep install -y --from-paths . --ignore-src --rosdistro kinetic
 cd ~/ros_workspaces/ws_moveit
 catkin config --extend /opt/ros/kinetic
 catkin build
-
-# Source the catkin workspace:
-source ~/ros_workspaces/ws_moveit/devel/setup.bash
-
-# Add the previous command to your .bashrc:
-echo 'source ~/ros_workspaces/ws_moveit/devel/setup.bash' >> ~/.bashrc
