@@ -1,14 +1,24 @@
 ### Running the Setup Scripts
 
-Open the terminal and run:
-```
-cd ros_workspaces
-bash step1-install_moveit.sh
-```
+```sh
+# Open the terminal
 
-If `ros_workspaces` doesn't have `ws_moveit` yet:
-```
-bash step2-create_workspace.sh
+  # Then
+  cd ros_workspaces
+
+    # If MoveIt is not installed yet:
+    bash step1-install_moveit.sh
+
+    # Else
+
+      # If `ros_workspaces` doesn't have `ws_moveit` yet:
+      bash step2-create_workspace.sh
+
+        # Then
+        bash step3-source_workspace.sh
+
+      # Else
+      bash step3-source_workspace.sh
 ```
 
 ### Next Steps
