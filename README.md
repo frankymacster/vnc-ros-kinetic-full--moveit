@@ -1,7 +1,7 @@
 ### Running the Container
 
 ```
-docker run --name ros_env -it --rm -p 6080:80 --mount type=bind,source=/Users/fss/Documents/ros_workspaces,target=/root/ros_workspaces ct2034/vnc-ros-kinetic-full
+docker run --name ros_env -it --rm -p 6080:80 --mount type=bind,source=$(pwd)/ros_workspaces,target=/root/ros_workspaces ct2034/vnc-ros-kinetic-full
 ```
 
 ### Tutorials
